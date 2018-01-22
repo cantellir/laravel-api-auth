@@ -49,5 +49,7 @@ class LoginController extends Controller
         $user = Auth::user();
         $user->token()->revoke();
         $user->token()->delete();
+
+        return response()->json(null, 204);        
     }
 }
