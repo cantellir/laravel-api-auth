@@ -25,12 +25,12 @@ php artisan passport:install
 ```
 
 ### Step 4 - Add HasApiTokens at App\User.php
-<pre>
+```
 <?php
 
 namespace App;
 
-<b>use Laravel\Passport\HasApiTokens;</b>
+**use Laravel\Passport\HasApiTokens;**
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -38,4 +38,4 @@ class User extends Authenticatable
 {
     use <b>HasApiTokens,</b> Notifiable;
 }
-<pre>
+```
