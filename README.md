@@ -1,15 +1,17 @@
 # laravel-api-auth
-Pratical step-by-step how to do a REST API in Laravel 5.5 with authentication by email and password using Laravel Passport (OAuth 2.0)
+Pratical step-by-step how to do a RESTful API in Laravel 5.5 with authentication by email and password using Laravel Passport (OAuth 2.0)
 
 ### Prerequisites
 * Apache
 * PHP
 * Composers
 * [Laravel new app created](https://github.com/cantellir/laravel-new-app)
-* Configured database
+
+### Initial notes
+The project in this repo contains all the steps finalized
 
 ### Step 1 - Add Laravel Passport to composer.json
-In the project dir, run on terminal
+In the project dir run
 ```
 composer require laravel/passport
 ```
@@ -214,5 +216,10 @@ curl -X POST -H 'Accept: application/json' -d 'email=user@test.com&password=pass
 
 Logout
 ```
-curl -H 'Accept: application/json' -H 'Authorization: Bearer token_generate_on_register_or_login' http://localhost/laravel-api-auth/api/logout
+curl -H 'Accept: application/json' -H 'Authorization: Bearer token_generated_on_register_or_login' http://localhost/laravel-api-auth/api/logout
 ```
+
+## References
+* [Laravel docs](https://laravel.com/docs/5.5) - Laravel Documentation
+* [Laravel Passport Post](https://laravelcode.com/post/laravel-passport-create-rest-api-with-authentication) - Create REST API with authentication
+* [Laravel API Tutorial](https://www.toptal.com/laravel/restful-laravel-api-tutorial) - How to Build and Test a RESTful API
