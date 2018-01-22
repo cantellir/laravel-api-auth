@@ -4,7 +4,7 @@ Pratical step-by-step how to do a RESTful API in Laravel 5.5 with authentication
 ### Prerequisites
 * Apache
 * PHP
-* Composers
+* Composer
 * [Laravel new app created](https://github.com/cantellir/laravel-new-app)
 
 ### Initial notes
@@ -72,7 +72,7 @@ class AuthServiceProvider extends ServiceProvider
 ```
 
 ### Step 6 - Alter auth api driver to "passport"
-In the "routes/api.php" adjust the driver for api auth
+In the "config/auth.php" adjust the driver for api auth
 ```
 'guards' => [
     'web' => [
