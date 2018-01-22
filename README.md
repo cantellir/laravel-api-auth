@@ -1,4 +1,4 @@
-# laravel-api-auth
+# Laravel Api Authentication - Step by Step
 Pratical step-by-step how to do a RESTful API in Laravel 5.5 with authentication by email and password using Laravel Passport (OAuth 2.0)
 
 ### Prerequisites
